@@ -1,0 +1,55 @@
+{% extends 'base copy.html' %}
+
+{% block css %}
+<style>
+    .main_board {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        padding: 50px;
+        max-width: 400px;
+        margin: 6rem auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .main_board h1 {
+        color: #007bff;
+        margin-bottom: 30px;
+    }
+
+    .login_button, .signup_button a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 25px;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .login_button {
+        background-color: #007bff;
+        color: #fff;
+        margin-right: 10px;
+    }
+
+    .login_button:hover {
+        background-color: #0056b3;
+    }
+
+    .signup_button a {
+        color: #007bff;
+    }
+
+    .signup_button a:hover {
+        color: #0056b3;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="main_board">
+    <h1>Welcome to the System</h1>
+    <a class="login_button" href="login">Login</a>
+    <p class="signup_button">Don't have an account yet? <a href="signup">Signup</a></p>
+</div>
+{% endblock %}
