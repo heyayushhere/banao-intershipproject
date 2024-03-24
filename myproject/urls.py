@@ -23,6 +23,7 @@ from django.urls import path
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns # new
 
 urlpatterns = [
+    path('blog/', include('blog_system.urls')),
     path('signup/', views.signup, name='signup'),
     path('login/', views.login_view, name='login'),
     path('dashboard/', views.dashboard, name='dashboard'),
